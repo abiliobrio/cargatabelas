@@ -1,0 +1,35 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<persistence-unit name="infnet_poseng">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>br.edu.infnet.posjava.tcc.cargatabelas.model.domain.Aluno</class>
+		<class>br.edu.infnet.posjava.tcc.cargatabelas.model.domain.Modulo</class>
+		<class>br.edu.infnet.posjava.tcc.cargatabelas.model.domain.Bloco</class>
+		<class>br.edu.infnet.posjava.tcc.cargatabelas.model.domain.Curso</class>
+		<class>br.edu.infnet.posjava.tcc.cargatabelas.model.domain.Professor</class>
+		<class>br.edu.infnet.posjava.tcc.cargatabelas.model.domain.TipoCurso</class>
+		<class>br.edu.infnet.posjava.tcc.cargatabelas.model.domain.Turma</class>
+
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/infnet_poseng?createDatabaseIfNotExist=true" />
+
+			<property name="javax.persistence.jdbc.user" value="root" />
+
+			<property name="javax.persistence.jdbc.password" value="ASvij0968#" />
+
+			<property name="javax.persistence.jdbc.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+
+		</properties>
+
+
+	</persistence-unit>
+
+
+</persistence>
